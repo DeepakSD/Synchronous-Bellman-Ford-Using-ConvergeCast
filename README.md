@@ -2,7 +2,7 @@
 
 Authors: Deepak Shanmugam, Ashwath Santhanam, Haripriyaa U Manian
 
-## Project Description:
+## Problem Description:
 
    We developed a simple simulator that simulates a synchronous distributed system using multi threading. There are n+1 threads in the system: Each of the n processes will be simulated by one thread and there is one master thread. The master thread will “inform” all threads when one round starts. Thus, each thread simulating one process, before it can begin round x, must wait for the master thread for a "go ahead" signal for round x. Clearly, the master thread can give the signal to start round x to the threads only if the master thread is sure that all the n threads (simulating n processes) have completed their previous round (round x-1).
 
@@ -17,9 +17,9 @@ No process knows n. Each process knows the number of neighbors it has, the ids o
 This project is coded using Java 7.
 
 The project has 3 java files namely,
-Bellman.java(Main class)
-Master.java
-Process.java
+* Bellman.java(Main class)
+* Master.java
+* Process.java
 
 The sample input file name is "input.txt"
 
