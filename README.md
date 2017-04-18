@@ -2,7 +2,7 @@
 
 Authors: Deepak Shanmugam, Ashwath Santhanam, Haripriyaa U Manian
 
-#Project Description:
+## Project Description:
 
    We developed a simple simulator that simulates a synchronous distributed system using multi threading. There are n+1 threads in the system: Each of the n processes will be simulated by one thread and there is one master thread. The master thread will “inform” all threads when one round starts. Thus, each thread simulating one process, before it can begin round x, must wait for the master thread for a "go ahead" signal for round x. Clearly, the master thread can give the signal to start round x to the threads only if the master thread is sure that all the n threads (simulating n processes) have completed their previous round (round x-1).
 
@@ -12,7 +12,7 @@ The input for this problem consists of (1) n (the number of processes of the dis
 
 No process knows n. Each process knows the number of neighbors it has, the ids of its neighbors and the edge weights for the edges incident on them. Termination is to be done through the convergecast procedure.
 
-#Specifications:
+## Specifications:
 
 This project is coded using Java 7.
 
@@ -24,11 +24,11 @@ Process.java
 The sample input file name is "input.txt"
 
 
-#How to compile:
+## How to compile:
 
     javac -cp . project1/*.java
 
-#How to execute:
+## How to execute:
 
     java -cp . project1.Bellman project1/input.txt
     
